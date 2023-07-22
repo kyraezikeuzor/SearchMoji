@@ -1,5 +1,5 @@
 // Create function to store JSOn file into variable
-//Create function to iterate through data and match emoji to JSON, then return the name of that emoji
+// Create function to iterate through data and match emoji to JSON, then return the name of that emoji
 
 
 function getEmojiName(userInput, result) {
@@ -21,7 +21,7 @@ function getEmojiName(userInput, result) {
 }
 
 
-//Declare variables
+// Declare variables
 let userInput = document.getElementById("text-input").value;
 let submitBtn = document.getElementById("submit-btn");
 
