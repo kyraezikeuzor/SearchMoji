@@ -13,7 +13,7 @@ function getEmojiName(userInput, result) {
             if (userInput == Object.keys(value)[i]) {
                 console.log(Object.values(value)[i].name);
                 console.log(i);
-                result.innerHTML = Object.values(value)[i].name;
+                result.textContent = Object.values(value)[i].name;
                 return true;
             }
         };
