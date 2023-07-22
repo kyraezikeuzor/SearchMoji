@@ -3,7 +3,7 @@
 
 
 function getEmojiName(userInput, result) {
-    const emojis = fetch('node_modules/unicode-emoji-json/data-by-emoji.json')
+    const emojis = fetch('../node_modules/unicode-emoji-json/data-by-emoji.json')
     .then((response) => response.json());
 
     emojis.then((value) => {
