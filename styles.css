@@ -49,6 +49,7 @@ main {
 .emoji {
     cursor: pointer;
     position: relative;
+    font-size: 26px;
 }
 
 .emoji:hover {
@@ -117,7 +118,6 @@ main {
 
 #emoji-list li {
     list-style: none;
-    font-size: 20px;
     margin: 0;
     padding: 0;
 }
@@ -133,7 +133,6 @@ main {
 
 #emoji-container li {
     list-style: none;
-    font-size: 20px;
 }
 
 
