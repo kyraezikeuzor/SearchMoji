@@ -8,9 +8,13 @@ const emojiContainer = document.getElementById('emoji-container');
 submitBtn.addEventListener('click', function(e) {
     e.preventDefault()
     let userInput = document.getElementById("text-input").value;
-    fetch(`https://emoji-api.com/emojis?search=${userInput}&access_key=69608fa26bfce45092e2092d19ab2e8b4085c092`)
-    .then(res => res.json())
-    .then(data => loadEmoji(data))
+
+    if (userInput != '') {
+        fetch(`https://emoji-api.com/emojis?search=${userInput}&access_key=69608fa26bfce45092e2092d19ab2e8b4085c092`)
+        .then(res => res.json())
+        .then(data => loadEmoji(data))
+    }
+   
 });
 
 function loadEmoji(data) {
